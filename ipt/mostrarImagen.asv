@@ -1,0 +1,5 @@
+function mostrarImagen(imagen,titulo,fila,columna,ancho,alto)
+    posicion=;
+    subplot(ancho,alto,posicion);
+
+end

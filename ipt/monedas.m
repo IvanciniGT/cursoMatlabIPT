@@ -1,0 +1,40 @@
+iniciarProyectoIPT();
+imagen=cargarImagen('coins.png');
+mostrarImagen(imagen,"Imagen Original",1,1,2,3);
+
+mascara=(imagen>105);
+mostrarImagen(mascara,"Mascara",1,2,2,3);
+
+mostrarImagen(imagen.*uint8(mascara),"Imagen con mascara",1,3,2,3);
+
+
+mascaraRellena=imfill(mascara,'holes');
+mostrarImagen(mascaraRellena,"Mascara rellena",2,2,2,3);
+
+mostrarImagen(imagen.*uint8(mascaraRellena),"Imagen con mascara rellena",2,3,2,3);
+
+imagenConMonedasEtiquetadas=bwlabel(mascaraRellena,8);
+imagenConMonedasColoreadas=label2rgb(imagenConMonedasEtiquetadas);
+mostrarImagen(imagenConMonedasColoreadas,"Imagen con monedas coloreadas",2,1,2,3);
+bordes=bwboundaries(mascaraRellena);
+propiedades=regionprops(imagenConMonedasEtiquetadas, imagen,'all');
+
+subplot(2,3,1);
+hold on;
+numeroDeMonedas=length(bordes);
+
+totalMonedas=zeros(2);
+
+for moneda=1:numeroDeMonedas
+    puntos=bordes{moneda};
+    propiedadesMoneda=propiedades(moneda);
+    perimetroMoneda=propiedadesMoneda.Perimeter;
+    diametroMoneda=perimetroMoneda/pi;
+    totalMonedas((diametroMoneda>50)+1)=totalMonedas((diametroMoneda>50)+1)+1;
+    plot(puntos(:,2),puntos(:,1),"g-");
+    fprintf("Moneda %d, Diametro: %f\n",moneda,diametroMoneda);
+end
+hold off;
+
+fprintf("Monedas grandes : %d\n",totalMonedas(2));
+fprintf("Monedas pequeñas: %d\n",totalMonedas(1));
