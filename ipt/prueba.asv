@@ -1,10 +1,7 @@
-matriz=[ 1 2 3 ; 4 5 6; 7 8 9];
-mascara=(matriz>4);
-matriz.*mascara
+numero=3;
+doblarNumero(numero);
+numero
 
-numero=3.16;
-int16(numero)
-
-% 0000 0000    ->    0
-% 0000 0001    ->    1
-% 0000 0010    ->    2
+function doblarNumero(numero)
+    numero=numero*2
+end

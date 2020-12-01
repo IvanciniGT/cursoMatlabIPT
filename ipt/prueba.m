@@ -1,7 +1,11 @@
-matriz=[ 1 2 3 ; 4 5 6; 7 8 9];
-mascara=(matriz>4);
-matriz.*mascara
+global numero;
+numero=3;
+doblarNumero();
+fprintf("FUERA DE LA FUNCION EL NUMERO VALE: %d\n",numero);
 
-numero=3.16;
-uint8(numero)
+function doblarNumero()
+    global numero;
+    numero=numero*2;
+    fprintf("DENTRO DE LA FUNCION EL NUMERO VALE: %d\n",numero);
 
+end
