@@ -1,7 +1,11 @@
 global numero;
-numero=3;
+numero=double(3);
 doblarNumero();
 fprintf("FUERA DE LA FUNCION EL NUMERO VALE: %d\n",numero);
+
+
+
+
 
 function doblarNumero()
     global numero;

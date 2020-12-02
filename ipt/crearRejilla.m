@@ -3,4 +3,5 @@ function crearRejilla(alto,ancho)
     global ALTO_REJILLA;
     ANCHO_REJILLA=ancho;
     ALTO_REJILLA=alto;
+    figure;
 end
