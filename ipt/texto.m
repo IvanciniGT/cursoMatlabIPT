@@ -18,3 +18,6 @@ mostrarImagen(letras,"Letras",1,1)
 %'NeighborhoodSize
 %ForegroundPolarity bright
 %Statistic mean
+
+textoReconocido=ocr(letras);
+textoReconocido.Text

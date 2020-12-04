@@ -4,11 +4,13 @@ function mostrarHistograma(imagen,titulo,umbral,fila,columna)
     posicion=ANCHO_REJILLA*(fila-1)+columna;
     subplot(ALTO_REJILLA,ANCHO_REJILLA,posicion);
     imhist(imagen);
-    x=[umbral umbral];
-    y=ylim;
-    hold on;
-    plot(x,y,"r-");
-    text(umbral+15, y(2)- range(y)*0.1, sprintf("Umbral: %d",umbral),"color",[ 1 0 0 ]);
-    hold off;
+    if umbral~=0
+        x=[umbral umbral];
+        y=ylim;
+        hold on;
+        plot(x,y,"r-");
+        text(umbral+15, y(2)- range(y)*0.1, sprintf("Umbral: %d",umbral),"color",[ 1 0 0 ]);
+        hold off;
+    end
     title(titulo);
 end

@@ -1,0 +1,20 @@
+elVideo=VideoReader("traffic.mj2");
+
+crearRejilla(2,3);
+frame=read(elVideo,50);
+mostrarImagen(imagen,"Imagen Original",1,1);
+
+
+
+
+
+
+
+%get(elVideo);
+%implay("traffic.mj2");
+%numeroFrames=elVideo.NumFrames;
+%for i=1:numeroFrames
+%    imshow(read(elVideo,i));
+%    
+%end
+

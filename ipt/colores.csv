@@ -1,0 +1,66 @@
+r,g,b,color
+0,0,0,Negro
+0,0,0,negro
+0,0,85,azul oscuro
+0,0,170,azul marino
+0,0,255,azul
+0,85,0,verde oscuro
+0,85,85,turquesa oscuro
+0,85,170,añil
+0,85,255,añil medio
+0,170,0,verde medio
+0,170,85,verde apagado
+0,170,170,turquesa
+0,170,255,azul cielo
+0,255,0,verde fluorescente
+0,255,85,verde fluorescente
+0,255,170,aguamarina
+0,255,255,cian
+85,0,0,granate
+85,0,85,berenjena
+85,0,170,morado
+85,0,255,añil oscuro
+85,85,0,verde oliva oscuro
+85,85,85,gris oscuro
+85,85,170,añil oscuro
+85,85,255,añil medio
+85,170,0,verde medio
+85,170,85,verde apagado
+85,170,170,turquesa
+85,170,255,azul claro
+85,255,0,verde fluorescente
+85,255,85,verde 
+85,255,170,verde azulado
+85,255,255,azul claro
+170,0,0,rojizo
+170,0,85,fucsia oscuro
+170,0,170,fucsia brillante
+170,0,255,moradete
+170,85,0,naranja oscuro
+170,85,85,teja
+170,85,170,rosa oscuro
+170,85,255,lila oscuro
+170,170,0,verde oliva claro
+170,170,85,verde oliva apagado
+170,170,170,gris
+170,170,255,añil claro
+170,255,0,verde lima
+170,255,85,verde lima
+170,255,170,verde enfermo
+170,255,255,azul brillante
+255,0,0,rojo
+255,0,85,rojizo
+255,0,170,fucsia
+255,0,255,rosa
+255,85,0,naranja
+255,85,85,rojizo claro
+255,85,170,rosa medio
+255,85,255,rosa medio
+255,170,0,naranja claro
+255,170,85,naranja apagado
+255,170,170,carne
+255,170,255,rosa claro
+255,255,0,amarillo
+255,255,85,amarillo
+255,255,170,amarillo palo
+255,255,255,blanco
